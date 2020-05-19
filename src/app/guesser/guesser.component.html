@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Guesser</title>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+</head>
+<body class="background" [ngClass]="backgroundClass()">
+
+    <div class="form">
+        <label form="guessField" class="label">Guess a number:</label>
+
+        <div class="under">
+
+            <div class="row">
+ 
+                <div class="resultParas">
+                    <p> Guesses: </p> 
+                    <p class="guesses"> {{ guesses }} </p>
+                    <p class="lastResult">{{ lastResult }}</p>
+                    <p class="lowOrHi">{{ lowOrHi }}</p>
+                </div>
+
+                <input maxlength="3" type="text" id="guessField" class="guessField" [(ngModel)]="guess" ng-disabled="guessCount>10">
+
+            </div>
+
+            <div class="start-reset"> 
+                <ng-template [ngIf]="!ended" [ngIfElse]="reset">
+                    <button class="button submit" id="submit"(click)="checkGuess()">Go!</button>
+                </ng-template>
+
+                <ng-template #reset>
+                    <button class="button reset" id="reset"(click)="resetGame()">Reset</button>
+                </ng-template>
+                 
+            </div>
+            
+        </div>
+
+    </div>
+
+<footer>Copyright 2020© Ethan Grebmeier</footer>
+</body>
+</html>

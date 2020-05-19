@@ -1,0 +1,250 @@
+.background{
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.fail{
+    background-color: #7C77B9;
+}
+
+.success{
+    background-color: #0BC9CD;
+}
+
+.app_link_holder{
+    height: 0%;
+    top: 0;
+    display: flex;
+
+}
+
+.app_link{
+    text-align: center;
+
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 4vw;
+    color: white;
+    text-shadow: -.1vw .1vw #676767;
+    text-decoration: none;
+
+}
+
+.app_link:hover{
+    color: #676767;
+    text-shadow: -.1vw .1vw #ffffff;
+
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: unsafe center;
+}
+
+.label{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 12vw;
+    text-align: center;
+    color: white;
+    text-shadow: -.4vw .4vw  #676767;
+    flex-grow: 2;
+    margin-top: 0vh;
+    margin-bottom: 0vw;
+}
+
+.under{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.resultParas{
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    width: 14vw;
+   
+
+
+        .lowOrHigh{
+            width: 10vw;
+            background: wheat;
+            color: yellow;
+        }
+
+        .lastResult{
+            
+            max-width: 5vw;
+        }
+
+        
+}
+    
+
+
+
+
+.classes{
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.guessField{
+    align-self: center;
+    text-align: center;
+    width: 24vw;
+    height: 18vw;
+    font-size: 14vw;
+    flex-grow: 1;
+    background: transparent;
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    text-shadow: -.3vw .3vw #676767;
+    border: none;
+    border-bottom: solid .2vw #ffffff;
+    outline: none;
+    margin-bottom: 2vw;
+    margin-left: 12vw;
+    margin-right: 27vw;
+    z-index: 1;
+}
+
+.submit, .reset{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    width: 13vw;
+    height: 6.5vw;
+    color: white;
+    background-color: transparent;
+    border: solid .3vw white;
+    margin-bottom: 5vh;
+    cursor: pointer;
+
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 5.4vw;
+
+    transition: color 300ms, background 300ms;
+}
+
+.reset{
+    width: 18vw;
+}
+
+.submit:hover, .reset:hover{
+
+    background-color: white;
+    color: #7C77B9;
+
+    transition: color 300ms, background 300ms;
+}
+.reset:hover{
+    color: #0BC9CD;
+}
+
+
+@media (max-width: 600px){
+
+    .background{
+        height: 175vw; 
+    }
+
+    .label{
+        margin-top: 6vh;
+        font-size: 18vw;
+        text-shadow: -.8vw .8vw  #676767;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .guessField{
+        align-self: center;
+        text-align: center;
+        width: 50vw;
+        height: 30vw;
+        font-size: 27vw;
+        flex-grow: 1;
+        background: transparent;
+        font-family: 'Hammersmith One', sans-serif;
+        color: white;
+        text-shadow: -.3vw .3vw #676767;
+        border: none;
+        border-bottom: solid .2vw #ffffff;
+        outline: none;
+        margin-bottom: 2vh;
+        margin-top: 0vh;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        z-index: 1;
+    }
+
+    .lastResult{
+        line-height: 2vh;
+    }
+
+    .resultParas{
+        font-family: 'Hammersmith One', sans-serif;
+        color: white;
+        font-size: 7vw;
+        text-align: center;
+        line-height: 8vw;
+        width: 80vw;
+        height: 30vh;
+        
+    }
+
+    .submit, .reset{
+        padding-left: 3vw;
+        padding-right: 12vw;
+        text-align: center;
+        width: 20vw;
+        height: 11vw;
+        color: white;
+        background-color: transparent;
+        border: solid .3vw white;
+
+        cursor: pointer;
+
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 8vw;
+
+        transition: color 300ms, background 300ms;
+        margin-bottom: 6vh;
+    }
+
+    .reset{
+        width: 31vw;
+    }
+
+    .app_link_holder{
+        top: 0;
+        display: flex;
+
+        margin: 0vw 0vw 0vw 3.5vw;
+
+    }
+
+    .app_link{
+        text-align: center;
+
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 9vw;
+        color: white;
+        text-shadow: -.1vw .1vw #676767;
+        text-decoration: none;
+    }
+}
+
+
+
