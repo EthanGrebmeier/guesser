@@ -44,7 +44,7 @@ export class GuesserComponent implements OnInit {
             this.setGameOver();
 
           } else if( this.guessCount == 10){
-            this.lowOrHi = "Gameover!!";
+            this.lowOrHi = "Game Over!";
             
             this.setGameOver();
           } else {

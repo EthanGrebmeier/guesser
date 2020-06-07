@@ -1,12 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    margin: 0
+    margin: 0;
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+
 }
 
 footer{
+    font-size: 2rem;
+    margin-top: 13.4vh;
     font-family: 'Hammersmith One', sans-serif;
     color: white;
     text-align: center;
     background: transparent;
-    text-shadow: -.1vw .1vw #676767;
+    text-shadow: -.4vh .4vh #676767;
+    position: relative;
+}
+
+@media (max-width: 1024px){
+    footer{
+        font-size: 1.3rem;
+        margin-top: 11vh;
+        text-shadow: -.4vh .4vh #676767;
+
+    }
+    
 }

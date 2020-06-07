@@ -1,6 +1,7 @@
 .background{
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 .fail{
@@ -24,7 +25,7 @@
     font-family: 'Hammersmith One', sans-serif;
     font-size: 4vw;
     color: white;
-    text-shadow: -.1vw .1vw #676767;
+    text-shadow: -.3vh .3vh #676767;
     text-decoration: none;
 
 }
@@ -45,13 +46,13 @@
 
 .label{
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 12vw;
+    font-size: 13.5vh;
     text-align: center;
     color: white;
-    text-shadow: -.4vw .4vw  #676767;
+    text-shadow: -.8vh .8vh  #676767;
     flex-grow: 2;
     margin-top: 0vh;
-    margin-bottom: 0vw;
+    margin-bottom: 8vh;
 }
 
 .under{
@@ -69,20 +70,16 @@
 .resultParas{
     font-family: 'Hammersmith One', sans-serif;
     color: white;
-    font-size: 2vw;
+    font-size: 5vh;
     text-align: center;
-    width: 14vw;
-   
+    width: 20vw;
+    line-height: 4.4vh;
 
 
         .lowOrHigh{
-            width: 10vw;
-            background: wheat;
-            color: yellow;
+            width: 18vw;
         }
-
         .lastResult{
-            
             max-width: 5vw;
         }
 
@@ -102,8 +99,8 @@
     align-self: center;
     text-align: center;
     width: 24vw;
-    height: 18vw;
-    font-size: 14vw;
+    height: 14vh;
+    font-size: 18vh;
     flex-grow: 1;
     background: transparent;
     font-family: 'Hammersmith One', sans-serif;
@@ -112,9 +109,10 @@
     border: none;
     border-bottom: solid .2vw #ffffff;
     outline: none;
-    margin-bottom: 2vw;
-    margin-left: 12vw;
-    margin-right: 27vw;
+    margin-top: 29vh;
+    margin-bottom: 4vh;
+    margin-left: 14vw;
+    margin-right: 35vw;
     z-index: 1;
 }
 
@@ -122,22 +120,22 @@
     display: inline-block;
     align-self: center;
     text-align: center;
-    width: 13vw;
-    height: 6.5vw;
+    width: 15vw;
+    height: 10vh;
     color: white;
     background-color: transparent;
     border: solid .3vw white;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
     cursor: pointer;
 
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 5.4vw;
+    font-size: 3rem;
 
     transition: color 300ms, background 300ms;
 }
 
 .reset{
-    width: 18vw;
+    width: 25vw;
 }
 
 .submit:hover, .reset:hover{
@@ -152,16 +150,19 @@
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 1024px){
 
     .background{
-        height: 175vw; 
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
     }
-
     .label{
         margin-top: 6vh;
-        font-size: 18vw;
+        margin-bottom: 11vh;
+        font-size: 12vw;
         text-shadow: -.8vw .8vw  #676767;
+        line-height: 10vh;
     }
 
     .row{
@@ -172,8 +173,8 @@
         align-self: center;
         text-align: center;
         width: 50vw;
-        height: 30vw;
-        font-size: 27vw;
+        height: 10vh;
+        font-size: 12vh;
         flex-grow: 1;
         background: transparent;
         font-family: 'Hammersmith One', sans-serif;
@@ -183,33 +184,34 @@
         border-bottom: solid .2vw #ffffff;
         outline: none;
         margin-bottom: 2vh;
-        margin-top: 0vh;
+        margin-top: 20vh;
         margin-left: 0vw;
         margin-right: 0vw;
         z-index: 1;
     }
 
     .lastResult{
-        line-height: 2vh;
+        line-height: .5vh;
     }
 
     .resultParas{
         font-family: 'Hammersmith One', sans-serif;
         color: white;
-        font-size: 7vw;
+        font-size: 4vh;
         text-align: center;
-        line-height: 8vw;
-        width: 80vw;
-        height: 30vh;
+        line-height: 1vh;
+        width: 60vw;
+
+        margin-bottom: 0vh;
         
     }
 
     .submit, .reset{
-        padding-left: 3vw;
-        padding-right: 12vw;
+        margin-top: 0vh;
+
         text-align: center;
-        width: 20vw;
-        height: 11vw;
+        width: 26vw;
+        height: 8vh;
         color: white;
         background-color: transparent;
         border: solid .3vw white;
@@ -217,10 +219,10 @@
         cursor: pointer;
 
         font-family: 'Hammersmith One', sans-serif;
-        font-size: 8vw;
+        font-size: 7vh;
 
         transition: color 300ms, background 300ms;
-        margin-bottom: 6vh;
+        margin-bottom: 0vh;
     }
 
     .reset{
