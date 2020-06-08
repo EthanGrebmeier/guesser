@@ -22,7 +22,7 @@
 }
 
 .label{
-    font-family: 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;;
     font-size: 13.5vh;
     text-align: center;
     color: white;
@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .row{
@@ -45,7 +46,7 @@
 }
 
 .resultParas{
-    font-family: 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;
     color: white;
     font-size: 5vh;
     text-align: center;
@@ -80,7 +81,7 @@
     font-size: 18vh;
     flex-grow: 1;
     background: transparent;
-    font-family: 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;
     color: white;
     text-shadow: -.3vw .3vw #676767;
     border: none;
@@ -105,7 +106,7 @@
     margin-bottom: 0vh;
     cursor: pointer;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;
     font-size: 3rem;
 
     transition: color 300ms, background 300ms;
@@ -129,11 +130,11 @@
 footer{
     font-size: 2rem;
     margin-top: 14vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family:  'Montserrat', sans-serif;;
     color: white;
     text-align: center;
     background: transparent;
-    text-shadow: -.4vh .4vh #676767;
+    text-shadow: -.3vh .3vh #676767;
     position: relative;
 }
 
@@ -165,11 +166,12 @@ footer{
         font-size: 12vh;
         flex-grow: 1;
         background: transparent;
-        font-family: 'Montserrat', sans-serif;
+        font-family:  'Montserrat', sans-serif;;
         color: white;
         text-shadow: -.3vw .3vw #676767;
         border: none;
-        border-bottom: solid .2vw #ffffff;
+        border-bottom: solid .1vh #ffffff;
+        border-radius: 0;
         outline: none;
         margin-bottom: 2vh;
         margin-top: 14vh;
@@ -183,12 +185,14 @@ footer{
     }
 
     .resultParas{
-        font-family: 'Montserrat', sans-serif;
+        font-family:  'Montserrat', sans-serif;;
         color: white;
         font-size: 4vh;
         text-align: center;
-        line-height: 1vh;
+        line-height: 4vh;
         width: 60vw;
+
+        margin-left: 4vw;
 
         margin-bottom: 0vh;
         
@@ -198,16 +202,16 @@ footer{
         margin-top: 0vh;
 
         text-align: center;
-        width: 26vw;
-        height: 8vh;
+        width: 36vw;
+        height: 8.4vh;
         color: white;
         background-color: transparent;
         border: solid .3vw white;
 
         cursor: pointer;
 
-        font-family: 'Montserrat', sans-serif;
-        font-size: 7vh;
+        font-family:  'Montserrat', sans-serif;;
+        font-size: 5vh;
 
         transition: color 300ms, background 300ms;
         margin-bottom: 0vh;
